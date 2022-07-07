@@ -1,0 +1,71 @@
+# SSB-Tokens: Democratizing Token Creation in a Decentralized Asset Transfer System
+              Secure Local Asset Transfer over Gossip
+
+TODO: Define Secure?
+
+## Advantages
+1. Lower technical complexity for token creation
+2. No dependency on Global Crypto Infrastructure
+3. Offline Capable
+4. Resource-Efficient (No proof of work)
+5. No proof-of-stake, loss in case of cheating is loosing the possiblity to transact with the community
+6. No artificial scarcity, token(s) value is derived from actual products and services
+   1. No token lost (can always be recreated)
+   2. Consumer advantage: fidelity cards are never lost, persistent record
+7. No requirement for social consensus to experiment with new local currencies
+8. Lowest transaction costs
+
+## Disadvantages
+1. At scale, requires (centralized?) exchange platform/protocols  
+
+
+## System Model
+- Requirements on underlying implementation
+
+## API
+
+- Scope of applicability (abstraction boundary for economic services built on top)
+
+
+## Protocol (Finite State Machine)
+1. States 
+2. Messages / Transducers 
+
+## Dealing with Attacks
+
+1. Proof-of-Insolvency
+2. Proof-of-Witness
+3. 
+
+## Optimization
+1. Validation frontier, i.e. records of operations previously validated (token-hash, author, seqno)
+
+# Applications
+1. Fidelity Cards
+2. Community-Supported Agriculture
+3. Crowdfunding Community Projects
+4. Funding Open Source Maintenance and Development
+
+TODO: Find a use case where everything is automated
+      (as a primitive for computational economics, or inside an OS)
+
+
+# Evaluation
+
+# Related Work
+
+## Smart-Contract in Ethereum
+
+## Local-Currencies
+
+## Notary Service
+
+1. Validity of notary transactions derive from integrity of notary
+
+## TrustChain
+
+1. Uses tangle to have participants validate other transactions, random entanglement between all transactions
+   provides global integrity guarantees 
+2. Token creation is outside the scope of the design
+
+
