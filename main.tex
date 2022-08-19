@@ -169,7 +169,7 @@ A more subtle example of double-spending is illustrated in Figure~\ref{figure:fo
 \label{figure:fork-double-spend}
 \end{figure}
 
-The previous examples used append-only logs, but similar issues arise if the system was using replication of sets of authenticated messages instead (CITE Aljoscha thesis): a malicious participant could selectively present different subsets of messages to different subsets of participants. Nonethess, because messages are authenticated, eventually two participants in a double-spend will eventually replicate each other messages and witness that more spendings were done by the malicious actor than the number of tokens available.
+The previous examples used append-only logs, but similar issues arise if the system was using replication of sets of authenticated messages instead~\cite{meyer2021setreconciliation}: a malicious participant could selectively present different subsets of messages to different subsets of participants. Nonethess, because messages are authenticated, eventually two participants in a double-spend will eventually replicate each other messages and witness that more spendings were done by the malicious actor than the number of tokens available.
 
 \subsection{Comparison to Bitcoin and Ethereum}
 
@@ -263,7 +263,7 @@ Similar to our \textbf{Token-supported Mesh} application proposal, Nuglets~\cite
 
 In this paper, we formulated the design of new \textit{local crypto-tokens} as a research problem based on unique characteristics of local economics, such as repeated interactions between participants that know and trust each others. We motivated our analysis from a fidelity card problem and other applications. Compared to existing solutions, such as pen and paper fidelity cards, crypto-tokens can provide better security guarantees. Compared to existing blockchain infrastructure, such as Bitcoin and Ethereum, local crypto-currencies could provide faster and cheaper transactions, lower energy usage, and require less infrastructure capital. The need for global transactions between untrusting parties shall however remain, so we expect local crypto-currencies to be useful for intra-community low-value transactions while evolutions of current blockchain projects shall remain useful for inter-communities high-value transactions.
 
-Research shall lead to new local crypto-token designs with low latency, low energy use, and low capital requirements while ensuring the required security properties of unforgeability of tokens and eventual double-spending detection. Ongoing peer-to-peer projects, such as Secure-Scuttlebutt~\cite{tarr2019ssb} or Hypercore (CITE), may serve as interesting foundations but local crypto-tokens could also be implemented on any other infrastructure that provides eventually consistent replication of local messages.
+Research shall lead to new local crypto-token designs with low latency, low energy use, and low capital requirements while ensuring the required security properties of unforgeability of tokens and eventual double-spending detection. Ongoing peer-to-peer projects, such as Secure-Scuttlebutt~\cite{tarr2019ssb} or Hypercore~\cite{hypercore}, may serve as interesting foundations but local crypto-tokens could also be implemented on any other infrastructure that provides eventually consistent replication of local messages.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{main}
