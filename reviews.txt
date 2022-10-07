@@ -1,0 +1,55 @@
+DICG 2022 Paper #95 Reviews and Comments
+===========================================================================
+Paper #95 Local Crypto-Tokens for Local Economics
+
+
+Review #95A
+===========================================================================
+
+Overall merit
+-------------
+3. Weak accept
+
+Reviewer expertise
+------------------
+3. Knowledgeable
+
+Paper summary
+-------------
+This paper observes that major blockchains might be too heavy for the needs of local economics applications, in particular because of their energy or Internet connectivity requirements. Instead, the authors argue that a new category of crypto-tokens needs to be clearly defined and that novel protocols should be designed to provide them.   
+
+The paper contains a motivating use-case (fidelity card in a shop). The authors sketch a solution that would rely on append-only logs, and discuss the fact that double spending might happen but would need to be detected. Requirements of local crypto-tokens are then listed, and some additional potential use-cases are discussed.
+
+Comments for authors
+--------------------
+Overall, the paper is reasonably well-written and seems to identify a set of use-cases where novel principles and methods need to be established. I think that the paper will foster interesting discussions at the workshop. I would have appreciated more technical details on the envisioned solution, but maybe the space is lacking.  
+
+There are some shortcomings that could be addressed. 
+
+* The only reference for append-only logs seems to be Secure-Scuttlebut [16]. I believe that some earlier works on append-only logs should also be cited. 
+
+-> find references
+
+* The examples that illustrate double-spending seem to assume a particular kind of append-only logs. This could be explicited. For example, would it be possible to execute these double spending if the append-only log relied on a trusted hardware? 
+
+-> No. However a trusted environment requires special hardware provided by a limited set of vendors, and as argued in the paper, the ability to detect double-spending after the fact is sufficient for that problem. 
+
+How are fork-based double-spend eventually detected? I assumed that participants would exchange their logs, but this is not said in the paper. The overall protocol that nodes run is not detailed. Maybe it would rely on SSB but recalling its main principles would help the paper be self-contained. 
+
+-> Add missing sentence.  
+
+* 'the ability to transact with other community members will be worth much more than the gains that can be obtained from the value of most of the transactions performed' -> Is there a reference, or a justification that could be used here? How about creating a new identity to cheat? 
+
+-> Check for a reference on economic or sociology about the distribution of the transaction values in small economies.
+
+-> Users always have the possibility to refuse tokens from certain identities. A high-valued transaction on an identity with a small or no history of previous transactions would be suspicious.
+
+* In section 2, it is not clear why the shop owner would have an interest to replace its current system that uses physical stamps and cards by a crypto-token. Some justification(s) would further improve the paper.
+
+-> See new applications such as Crowdfunding. The higher level of security on tokens opens higher-valued transactions. In addition, making fidelity points digitals would also provide an additional venue for marketing.   
+
+* The last sentence of the introduction, which announces the plan of the paper, would deserve to be splitted in several sentences. As is, it is difficult to read it. 
+
+* Missing commas after 'e.g.' and 'i.e.'.
+
+* later messages point the earlier messages -> point to?
